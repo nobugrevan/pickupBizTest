@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PickupBiz Software Basic HTML Understanding Test I</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .question p {
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+    .option {
+      margin: 10px 0;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #result {
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>PickupBiz Software Basic HTML Understanding Test I</h1>
+  <div id="quiz">
+    <div class="question">
+      <p>1. What is the primary purpose of HTML?</p>
+      <div class="option"><input type="radio" name="q1" value="a"> a) To style web pages</div>
+      <div class="option"><input type="radio" name="q1" value="b"> b) To create the structure of web pages</div>
+      <div class="option"><input type="radio" name="q1" value="c"> c) To add interactivity to web pages</div>
+      <div class="option"><input type="radio" name="q1" value="d"> d) To manage server-side logic</div>
+    </div>
+    <div class="question">
+      <p>2. What does CSS primarily help with?</p>
+      <div class="option"><input type="radio" name="q2" value="a"> a) Creating web page structure</div>
+      <div class="option"><input type="radio" name="q2" value="b"> b) Styling web pages</div>
+      <div class="option"><input type="radio" name="q2" value="c"> c) Adding actions to web pages</div>
+      <div class="option"><input type="radio" name="q2" value="d"> d) Defining database connections</div>
+    </div>
+    <div class="question">
+      <p>3. What is the role of JavaScript in web development?</p>
+      <div class="option"><input type="radio" name="q3" value="a"> a) To create the structure of web pages</div>
+      <div class="option"><input type="radio" name="q3" value="b"> b) To style web pages</div>
+      <div class="option"><input type="radio" name="q3" value="c"> c) To add actions and interactivity to web pages</div>
+      <div class="option"><input type="radio" name="q3" value="d"> d) To optimize images</div>
+    </div>
+    <div class="question">
+      <p>4. What does the CSS 'margin' property define?</p>
+      <div class="option"><input type="radio" name="q4" value="a"> a) The space inside an element's border</div>
+      <div class="option"><input type="radio" name="q4" value="b"> b) The space outside an element's border from the viewport</div>
+      <div class="option"><input type="radio" name="q4" value="c"> c) The outline of an element</div>
+      <div class="option"><input type="radio" name="q4" value="d"> d) The content of an element</div>
+    </div>
+    <div class="question">
+      <p>5. What is the CSS 'padding' property used for?</p>
+      <div class="option"><input type="radio" name="q5" value="a"> a) Space outside an element's border</div>
+      <div class="option"><input type="radio" name="q5" value="b"> b) Space between an element's content and its border</div>
+      <div class="option"><input type="radio" name="q5" value="c"> c) The outline of an element</div>
+      <div class="option"><input type="radio" name="q5" value="d"> d) The alignment of text</div>
+    </div>
+    <div class="question">
+      <p>6. What does the CSS 'border' property represent?</p>
+      <div class="option"><input type="radio" name="q6" value="a"> a) The space between elements</div>
+      <div class="option"><input type="radio" name="q6" value="b"> b) The text content of an element</div>
+      <div class="option"><input type="radio" name="q6" value="c"> c) The outline of an element</div>
+      <div class="option"><input type="radio" name="q6" value="d"> d) The background color of an element</div>
+    </div>
+    <div class="question">
+      <p>7. In CSS, what is considered the 'content' of an element?</p>
+      <div class="option"><input type="radio" name="q7" value="a"> a) The space outside the element</div>
+      <div class="option"><input type="radio" name="q7" value="b"> b) The text or child elements within a parent element</div>
+      <div class="option"><input type="radio" name="q7" value="c"> c) The border of the element</div>
+      <div class="option"><input type="radio" name="q7" value="d"> d) The margin of the element</div>
+    </div>
+    <div class="question">
+      <p>8. What is the correct syntax for a JavaScript function named 'doAlert'?</p>
+      <div class="option"><input type="radio" name="q8" value="a"> a) function doAlert[] {}</div>
+      <div class="option"><input type="radio" name="q8" value="b"> b) function doAlert() {}</div>
+      <div class="option"><input type="radio" name="q8" value="c"> c) function doAlert {}()</div>
+      <div class="option"><input type="radio" name="q8" value="d"> d) doAlert function() {}</div>
+    </div>
+    <div class="question">
+      <p>9. Which HTML tag is used to define a paragraph?</p>
+      <div class="option"><input type="radio" name="q9" value="a"> a) &lt;p&gt;</div>
+      <div class="option"><input type="radio" name="q9" value="b"> b) &lt;div&gt;</div>
+      <div class="option"><input type="radio" name="q9" value="c"> c) &lt;span&gt;</div>
+      <div class="option"><input type="radio" name="q9" value="d"> d) &lt;section&gt;</div>
+    </div>
+    <div class="question">
+      <p>10. Which CSS property is used to set the background color of an element?</p>
+      <div class="option"><input type="radio" name="q10" value="a"> a) color</div>
+      <div class="option"><input type="radio" name="q10" value="b"> b) background-color</div>
+      <div class="option"><input type="radio" name="q10" value="c"> c) background</div>
+      <div class="option"><input type="radio" name="q10" value="d"> d) fill</div>
+    </div>
+  </div>
+  <button onclick="submitQuiz()">Submit Test</button>
+   <div id="result"></div>
+<script>
+  function submitQuiz() {
+    const answers = {
+      q1: 'b',
+      q2: 'b',
+      q3: 'c',
+      q4: 'b',
+      q5: 'b',
+      q6: 'c',
+      q7: 'b',
+      q8: 'b',
+      q9: 'a',
+      q10: 'b'
+    };
+    let score = 0;
+    for (let i = 1; i <= 10; i++) {
+      const selected = document.querySelector(`input[name="q${i}"]:checked`);
+      if (selected && selected.value === answers[`q${i}`]) {
+        score++;
+      }
+    }
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `Your score: ${score}/10`;
+    if (score === 10) {
+      resultDiv.innerHTML += '<br>Congratulations! Perfect score!';
+    } else {
+      resultDiv.innerHTML += '<br>Review the correct answers below:<br>';
+      resultDiv.innerHTML += '1. b) To create the structure of web pages<br>';
+      resultDiv.innerHTML += '2. b) Styling web pages<br>';
+      resultDiv.innerHTML += '3. c) To add actions and interactivity to web pages<br>';
+      resultDiv.innerHTML += '4. b) The space outside an element\'s border from the viewport<br>';
+      resultDiv.innerHTML += '5. b) Space between an element\'s content and its border<br>';
+      resultDiv.innerHTML += '6. c) The outline of an element<br>';
+      resultDiv.innerHTML += '7. b) The text or child elements within a parent element<br>';
+      resultDiv.innerHTML += '8. b) function doAlert() {}<br>';
+      resultDiv.innerHTML += '9. a) &lt;p&gt;<br>';
+      resultDiv.innerHTML += '10. b) background-color';
+    }
+  }
+</script>
+</body>
+</html>
